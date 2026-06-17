@@ -76,8 +76,10 @@ export const MODEL_PRICING = {
   // === Kimi ===
   "kimi-k2":                      { input: 1.00,  output: 4.00,  cached: 0.50,  reasoning: 6.00,   cache_creation: 1.00  },
   "kimi-k2-thinking":             { input: 1.50,  output: 6.00,  cached: 0.75,  reasoning: 9.00,   cache_creation: 1.50  },
-  "kimi-k2.5":                    { input: 1.20,  output: 4.80,  cached: 0.60,  reasoning: 7.20,   cache_creation: 1.20  },
+  "kimi-k2.5":                    { input: 0.60,  output: 3.00,  cached: 0.10,  reasoning: 0.00,   cache_creation: 0.00  },
   "kimi-k2.5-thinking":           { input: 1.80,  output: 7.20,  cached: 0.90,  reasoning: 10.80,  cache_creation: 1.80  },
+  "kimi-k2.6":                    { input: 0.95,  output: 4.00,  cached: 0.16,  reasoning: 0.00,   cache_creation: 0.00  },
+  "kimi-k2.7-code":               { input: 1.90,  output: 8.00,  cached: 0.38,  reasoning: 0.00,   cache_creation: 0.00  },
   "kimi-latest":                  { input: 1.00,  output: 4.00,  cached: 0.50,  reasoning: 6.00,   cache_creation: 1.00  },
 
   // === DeepSeek ===
@@ -183,7 +185,10 @@ export const PATTERN_PRICING = [
 
   // --- Kimi ---
   { pattern: "kimi-*-thinking",  pricing: { input: 1.80,  output: 7.20,  cached: 0.90,  reasoning: 10.80,  cache_creation: 1.80  } },
-  { pattern: "kimi-k2*",        pricing: { input: 1.20,  output: 4.80,  cached: 0.60,  reasoning: 7.20,   cache_creation: 1.20  } },
+  { pattern: "kimi-k2.7*",      pricing: { input: 1.90,  output: 8.00,  cached: 0.38,  reasoning: 0.00,   cache_creation: 0.00  } },
+  { pattern: "kimi-k2.6*",      pricing: { input: 0.95,  output: 4.00,  cached: 0.16,  reasoning: 0.00,   cache_creation: 0.00  } },
+  { pattern: "kimi-k2.5*",      pricing: { input: 0.60,  output: 3.00,  cached: 0.10,  reasoning: 0.00,   cache_creation: 0.00  } },
+  { pattern: "kimi-k2*",        pricing: { input: 0.60,  output: 3.00,  cached: 0.10,  reasoning: 0.00,   cache_creation: 0.00  } },
   { pattern: "kimi-*",          pricing: { input: 1.00,  output: 4.00,  cached: 0.50,  reasoning: 6.00,   cache_creation: 1.00  } },
 
   // --- DeepSeek ---
