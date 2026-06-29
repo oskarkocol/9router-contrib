@@ -96,10 +96,14 @@ export const MODEL_PRICING = {
   "glm-5":                        { input: 1.00,  output: 4.00,  cached: 0.50,  reasoning: 6.00,   cache_creation: 1.00  },
 
   // === MiniMax ===
+  "MiniMax-M2.7-highspeed":        { input: 0.60,  output: 2.40,  cached: 0.06,  reasoning: 2.40,  cache_creation: 0  },
+  "MiniMax-M2.1-highspeed":        { input: 0.30,  output: 2.40,  cached: 0.03,  reasoning: 2.40,  cache_creation: 0  },
+  "MiniMax-M2":                    { input: 0.30,  output: 1.20,  cached: 0,  reasoning: 1.20,  cache_creation: 0  },
+  "M2-her":                        { input: 0.30,  output: 1.20,  cached: 0.03,  reasoning: 1.20,  cache_creation: 0  },
   "MiniMax-M3":                   { input: 0.30,  output: 1.20,  cached: 0.06,  reasoning: 1.80,   cache_creation: 0.30  },
-  "MiniMax-M2.1":                 { input: 0.50,  output: 2.00,  cached: 0.25,  reasoning: 3.00,   cache_creation: 0.50  },
-  "MiniMax-M2.5":                 { input: 0.50,  output: 2.00,  cached: 0.25,  reasoning: 3.00,   cache_creation: 0.50  },
-  "MiniMax-M2.7":                 { input: 0.50,  output: 2.00,  cached: 0.25,  reasoning: 3.00,   cache_creation: 0.50  },
+  "MiniMax-M2.1":                 { input: 0.30,  output: 1.20,  cached: 0.03,  reasoning: 1.20,  cache_creation: 0  },
+  "MiniMax-M2.5":                 { input: 0.30,  output: 1.20,  cached: 0.03,  reasoning: 1.20,  cache_creation: 0  },
+  "MiniMax-M2.7":                 { input: 0.30,  output: 1.20,  cached: 0.06,  reasoning: 1.20,  cache_creation: 0  },
   "minimax-m2.1":                 { input: 0.50,  output: 2.00,  cached: 0.25,  reasoning: 3.00,   cache_creation: 0.50  },
   "minimax-m2.5":                 { input: 0.60,  output: 2.40,  cached: 0.30,  reasoning: 3.60,   cache_creation: 0.60  },
 
@@ -198,7 +202,7 @@ export const PATTERN_PRICING = [
   { pattern: "glm-*",           pricing: { input: 0.50,  output: 2.00,  cached: 0.25,  reasoning: 3.00,   cache_creation: 0.50  } },
 
   // --- MiniMax ---
-  { pattern: "MiniMax-*",       pricing: { input: 0.50,  output: 2.00,  cached: 0.25,  reasoning: 3.00,   cache_creation: 0.50  } },
+  { pattern: "MiniMax-*",       pricing: { input: 0.30,  output: 1.20,  cached: 0.03,  reasoning: 1.20,  cache_creation: 0  } },
   { pattern: "minimax-*",       pricing: { input: 0.50,  output: 2.00,  cached: 0.25,  reasoning: 3.00,   cache_creation: 0.50  } },
 
   // --- Grok ---
