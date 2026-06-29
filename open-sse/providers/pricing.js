@@ -11,11 +11,14 @@
  */
 export const MODEL_PRICING = {
   // === Anthropic / Claude ===
-  "claude-opus-4-6":              { input: 5.00,  output: 25.00, cached: 0.50,  reasoning: 25.00,  cache_creation: 6.25  },
-  "claude-opus-4-5-20251101":     { input: 5.00,  output: 25.00, cached: 0.50,  reasoning: 25.00,  cache_creation: 6.25  },
-  "claude-sonnet-4-6":            { input: 3.00,  output: 15.00, cached: 0.30,  reasoning: 15.00,  cache_creation: 3.75  },
-  "claude-sonnet-4-5-20250929":   { input: 3.00,  output: 15.00, cached: 0.30,  reasoning: 15.00,  cache_creation: 3.75  },
-  "claude-haiku-4-5-20251001":    { input: 1.00,  output: 5.00,  cached: 0.10,  reasoning: 5.00,   cache_creation: 1.25  },
+  "claude-opus-4-7":               { input: 5.00,  output: 25.00,  cached: 0.50,  reasoning: 25.00,  cache_creation: 6.25  },
+  "claude-opus-4-1-20250805":      { input: 15.00,  output: 75.00,  cached: 1.50,  reasoning: 75.00,  cache_creation: 18.75  },
+  "claude-fable-5":                { input: 10.00,  output: 50.00,  cached: 1.00,  reasoning: 50.00,  cache_creation: 12.50  },
+  "claude-opus-4-6":              { input: 5.00,  output: 25.00,  cached: 0.50,  reasoning: 25.00,  cache_creation: 6.25  },
+  "claude-opus-4-5-20251101":     { input: 5.00,  output: 25.00,  cached: 0.50,  reasoning: 25.00,  cache_creation: 6.25  },
+  "claude-sonnet-4-6":            { input: 3.00,  output: 15.00,  cached: 0.30,  reasoning: 15.00,  cache_creation: 3.75  },
+  "claude-sonnet-4-5-20250929":   { input: 3.00,  output: 15.00,  cached: 0.30,  reasoning: 15.00,  cache_creation: 3.75  },
+  "claude-haiku-4-5-20251001":    { input: 1.00,  output: 5.00,  cached: 0.10,  reasoning: 5.00,  cache_creation: 1.25  },
   "claude-sonnet-4-20250514":     { input: 3.00,  output: 15.00, cached: 1.50,  reasoning: 15.00,  cache_creation: 3.00  },
   "claude-opus-4-20250514":       { input: 15.00, output: 25.00, cached: 7.50,  reasoning: 112.50, cache_creation: 15.00 },
   "claude-3-5-sonnet-20241022":   { input: 3.00,  output: 15.00, cached: 1.50,  reasoning: 15.00,  cache_creation: 3.00  },
@@ -147,10 +150,10 @@ export const PATTERN_PRICING = [
   { pattern: "*-codex",         pricing: { input: 3.00,  output: 12.00, cached: 1.50,  reasoning: 18.00,  cache_creation: 3.00  } },
 
   // --- Claude ---
-  { pattern: "claude-opus-*",   pricing: { input: 5.00,  output: 25.00, cached: 0.50,  reasoning: 25.00,  cache_creation: 6.25  } },
-  { pattern: "claude-sonnet-*", pricing: { input: 3.00,  output: 15.00, cached: 0.30,  reasoning: 15.00,  cache_creation: 3.75  } },
-  { pattern: "claude-haiku-*",  pricing: { input: 1.00,  output: 5.00,  cached: 0.10,  reasoning: 5.00,   cache_creation: 1.25  } },
-  { pattern: "claude-*",        pricing: { input: 3.00,  output: 15.00, cached: 0.30,  reasoning: 15.00,  cache_creation: 3.75  } },
+  { pattern: "claude-opus-*",   pricing: { input: 5.00,  output: 25.00,  cached: 0.50,  reasoning: 25.00,  cache_creation: 6.25  } },
+  { pattern: "claude-sonnet-*", pricing: { input: 3.00,  output: 15.00,  cached: 0.30,  reasoning: 15.00,  cache_creation: 3.75  } },
+  { pattern: "claude-haiku-*",  pricing: { input: 1.00,  output: 5.00,  cached: 0.10,  reasoning: 5.00,  cache_creation: 1.25  } },
+  { pattern: "claude-*",        pricing: { input: 3.00,  output: 15.00,  cached: 0.30,  reasoning: 15.00,  cache_creation: 3.75  } },
 
   // --- Gemini (specific first, generic last) ---
   { pattern: "gemini-*-flash-lite", pricing: { input: 0.15, output: 1.25, cached: 0.015, reasoning: 1.875, cache_creation: 0.15 } },
