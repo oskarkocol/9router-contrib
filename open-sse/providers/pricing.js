@@ -75,11 +75,14 @@ export const MODEL_PRICING = {
   "qwen3-coder-flash":            { input: 0.50,  output: 2.00,  cached: 0.25,  reasoning: 3.00,   cache_creation: 0.50  },
 
   // === Kimi ===
-  "kimi-k2":                      { input: 1.00,  output: 4.00,  cached: 0.50,  reasoning: 6.00,   cache_creation: 1.00  },
-  "kimi-k2-thinking":             { input: 1.50,  output: 6.00,  cached: 0.75,  reasoning: 9.00,   cache_creation: 1.50  },
-  "kimi-k2.5":                    { input: 1.20,  output: 4.80,  cached: 0.60,  reasoning: 7.20,   cache_creation: 1.20  },
-  "kimi-k2.5-thinking":           { input: 1.80,  output: 7.20,  cached: 0.90,  reasoning: 10.80,  cache_creation: 1.80  },
-  "kimi-latest":                  { input: 1.00,  output: 4.00,  cached: 0.50,  reasoning: 6.00,   cache_creation: 1.00  },
+  "kimi-k2.5":               { input: 0.6,  output: 3.00,  cached: 0.1,  reasoning: 3.00,  cache_creation: 0  },
+  "kimi-k2.6":               { input: 0.95,  output: 4.00,  cached: 0.16,  reasoning: 4.00,  cache_creation: 0  },
+  "kimi-k2.7-code":               { input: 0.95,  output: 4.00,  cached: 0.19,  reasoning: 4.00,  cache_creation: 0  },
+  "kimi-k2.7-code-highspeed":               { input: 1.9,  output: 8.00,  cached: 0.38,  reasoning: 8.00,  cache_creation: 0  },
+  "kimi-k2":               { input: 1.00,  output: 4.00,  cached: 0.5,  reasoning: 6.00,  cache_creation: 1.00  },
+  "kimi-k2-thinking":               { input: 1.5,  output: 6.00,  cached: 0.75,  reasoning: 9.00,  cache_creation: 1.5  },
+  "kimi-k2.5-thinking":               { input: 1.8,  output: 7.2,  cached: 0.9,  reasoning: 10.8,  cache_creation: 1.8  },
+  "kimi-latest":               { input: 1.00,  output: 4.00,  cached: 0.5,  reasoning: 6.00,  cache_creation: 1.00  },
 
   // === DeepSeek ===
   "deepseek-chat":                { input: 0.14,  output: 0.28,  cached: 0.0028, reasoning: 0.28,   cache_creation: 0.14  },
@@ -185,7 +188,7 @@ export const PATTERN_PRICING = [
 
   // --- Kimi ---
   { pattern: "kimi-*-thinking",  pricing: { input: 1.80,  output: 7.20,  cached: 0.90,  reasoning: 10.80,  cache_creation: 1.80  } },
-  { pattern: "kimi-k2*",        pricing: { input: 1.20,  output: 4.80,  cached: 0.60,  reasoning: 7.20,   cache_creation: 1.20  } },
+  { pattern: "kimi-k2*",        pricing: { input: 0.6,  output: 3.00,  cached: 0.1,  reasoning: 3.00,   cache_creation: 0  } },
   { pattern: "kimi-*",          pricing: { input: 1.00,  output: 4.00,  cached: 0.50,  reasoning: 6.00,   cache_creation: 1.00  } },
 
   // --- DeepSeek ---
