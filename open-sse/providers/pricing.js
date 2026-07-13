@@ -91,10 +91,15 @@ export const MODEL_PRICING = {
   "deepseek-v4-pro":              { input: 0.435, output: 0.87,  cached: 0.003625, reasoning: 0.87,  cache_creation: 0.435 },
 
   // === GLM ===
-  "glm-4.6":                      { input: 0.50,  output: 2.00,  cached: 0.25,  reasoning: 3.00,   cache_creation: 0.50  },
-  "glm-4.6v":                     { input: 0.75,  output: 3.00,  cached: 0.375, reasoning: 4.50,   cache_creation: 0.75  },
-  "glm-4.7":                      { input: 0.75,  output: 3.00,  cached: 0.375, reasoning: 4.50,   cache_creation: 0.75  },
-  "glm-5":                        { input: 1.00,  output: 4.00,  cached: 0.50,  reasoning: 6.00,   cache_creation: 1.00  },
+  "glm-4.5":               { input: 0.6,  output: 2.2,  cached: 0.11,  reasoning: 2.2,  cache_creation: 0  },
+  "glm-4.5-air":               { input: 0.2,  output: 1.1,  cached: 0.03,  reasoning: 1.1,  cache_creation: 0  },
+  "glm-4.6":               { input: 0.6,  output: 2.2,  cached: 0.11,  reasoning: 2.2,  cache_creation: 0  },
+  "glm-4.7":               { input: 0.6,  output: 2.2,  cached: 0.11,  reasoning: 2.2,  cache_creation: 0  },
+  "glm-5":               { input: 1.00,  output: 3.2,  cached: 0.2,  reasoning: 3.2,  cache_creation: 0  },
+  "glm-5-turbo":               { input: 1.2,  output: 4.00,  cached: 0.24,  reasoning: 4.00,  cache_creation: 0  },
+  "glm-5.1":               { input: 1.4,  output: 4.4,  cached: 0.26,  reasoning: 4.4,  cache_creation: 0  },
+  "glm-5.2":               { input: 1.4,  output: 4.4,  cached: 0.26,  reasoning: 4.4,  cache_creation: 0  },
+  "glm-4.6v":               { input: 0.75,  output: 3.00,  cached: 0.375,  reasoning: 4.5,  cache_creation: 0.75  },
 
   // === MiniMax ===
   "MiniMax-M3":                   { input: 0.30,  output: 1.20,  cached: 0.06,  reasoning: 1.80,   cache_creation: 0.30  },
@@ -195,9 +200,9 @@ export const PATTERN_PRICING = [
   { pattern: "deepseek-*",      pricing: { input: 0.14,  output: 0.28,  cached: 0.0028, reasoning: 0.28,   cache_creation: 0.14  } },
 
   // --- GLM ---
-  { pattern: "glm-5*",          pricing: { input: 1.00,  output: 4.00,  cached: 0.50,  reasoning: 6.00,   cache_creation: 1.00  } },
-  { pattern: "glm-4*",          pricing: { input: 0.75,  output: 3.00,  cached: 0.375, reasoning: 4.50,   cache_creation: 0.75  } },
-  { pattern: "glm-*",           pricing: { input: 0.50,  output: 2.00,  cached: 0.25,  reasoning: 3.00,   cache_creation: 0.50  } },
+  { pattern: "glm-5*",          pricing: { input: 1.00,  output: 3.2,  cached: 0.2,  reasoning: 3.2,   cache_creation: 0  } },
+  { pattern: "glm-4*",          pricing: { input: 0.6,  output: 2.2,  cached: 0.11,  reasoning: 2.2,   cache_creation: 0  } },
+  { pattern: "glm-*",           pricing: { input: 0.6,  output: 2.2,  cached: 0.11,  reasoning: 2.2,   cache_creation: 0  } },
 
   // --- MiniMax ---
   { pattern: "MiniMax-*",       pricing: { input: 0.50,  output: 2.00,  cached: 0.25,  reasoning: 3.00,   cache_creation: 0.50  } },
