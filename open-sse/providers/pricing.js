@@ -11,11 +11,11 @@
  */
 export const MODEL_PRICING = {
   // === Anthropic / Claude ===
-  "claude-opus-4-6":              { input: 5.00,  output: 25.00, cached: 0.50,  reasoning: 25.00,  cache_creation: 6.25  },
-  "claude-opus-4-5-20251101":     { input: 5.00,  output: 25.00, cached: 0.50,  reasoning: 25.00,  cache_creation: 6.25  },
-  "claude-sonnet-4-6":            { input: 3.00,  output: 15.00, cached: 0.30,  reasoning: 15.00,  cache_creation: 3.75  },
-  "claude-sonnet-4-5-20250929":   { input: 3.00,  output: 15.00, cached: 0.30,  reasoning: 15.00,  cache_creation: 3.75  },
-  "claude-haiku-4-5-20251001":    { input: 1.00,  output: 5.00,  cached: 0.10,  reasoning: 5.00,   cache_creation: 1.25  },
+  "claude-opus-4-6":                 { input: 5, output: 25, cached: 0.5, reasoning: 25, cache_creation: 6.25 },
+  "claude-opus-4-5-20251101":        { input: 5, output: 25, cached: 0.5, reasoning: 25, cache_creation: 6.25 },
+  "claude-sonnet-4-6":               { input: 3, output: 15, cached: 0.3, reasoning: 15, cache_creation: 3.75 },
+  "claude-sonnet-4-5-20250929":      { input: 3, output: 15, cached: 0.3, reasoning: 15, cache_creation: 3.75 },
+  "claude-haiku-4-5-20251001":       { input: 1, output: 5, cached: 0.1, reasoning: 5, cache_creation: 1.25 },
   "claude-sonnet-4-20250514":     { input: 3.00,  output: 15.00, cached: 1.50,  reasoning: 15.00,  cache_creation: 3.00  },
   "claude-opus-4-20250514":       { input: 15.00, output: 25.00, cached: 7.50,  reasoning: 112.50, cache_creation: 15.00 },
   "claude-3-5-sonnet-20241022":   { input: 3.00,  output: 15.00, cached: 1.50,  reasoning: 15.00,  cache_creation: 3.00  },
@@ -28,9 +28,13 @@ export const MODEL_PRICING = {
   "claude-sonnet-4.6":            { input: 3.00,  output: 15.00, cached: 0.30,  reasoning: 22.50,  cache_creation: 3.00  },
   "claude-opus-4-5-thinking":     { input: 5.00,  output: 25.00, cached: 0.50,  reasoning: 37.50,  cache_creation: 5.00  },
   "claude-opus-4-6-thinking":     { input: 5.00,  output: 25.00, cached: 0.50,  reasoning: 37.50,  cache_creation: 5.00  },
-  "claude-fable-5":               { input: 10.00, output: 50.00, cached: 1.00,  reasoning: 50.00,  cache_creation: 12.50 },
-
-  // === OpenAI / GPT ===
+  "claude-fable-5":                  { input: 10, output: 50, cached: 1, reasoning: 50, cache_creation: 12.5 },
+  
+  "claude-opus-4-7":                 { input: 5, output: 25, cached: 0.5, reasoning: 25, cache_creation: 6.25 },
+  "claude-opus-4-8":                 { input: 5, output: 25, cached: 0.5, reasoning: 25, cache_creation: 6.25 },
+  "claude-opus-5":                   { input: 5, output: 25, cached: 0.5, reasoning: 25, cache_creation: 6.25 },
+  "claude-sonnet-5":                 { input: 2, output: 10, cached: 0.2, reasoning: 10, cache_creation: 2.5 },
+// === OpenAI / GPT ===
   "gpt-3.5-turbo":                { input: 0.50,  output: 1.50,  cached: 0.25,  reasoning: 2.25,   cache_creation: 0.50  },
   "gpt-4":                        { input: 2.50,  output: 10.00, cached: 1.25,  reasoning: 15.00,  cache_creation: 2.50  },
   "gpt-4-turbo":                  { input: 10.00, output: 30.00, cached: 5.00,  reasoning: 45.00,  cache_creation: 10.00 },
