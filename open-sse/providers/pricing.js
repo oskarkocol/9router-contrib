@@ -82,20 +82,28 @@ export const MODEL_PRICING = {
 
   // === Kimi ===
   // Official platform.kimi.ai: cache-hit / cache-miss / output per 1M tokens
-  "kimi-k3":                      { input: 3.00,  output: 15.00, cached: 0.30,  reasoning: 15.00,  cache_creation: 3.00  },
+  "kimi-k3":                         { input: 3, output: 15, cached: 0.3, reasoning: 15, cache_creation: 0 },
   "k3":                           { input: 3.00,  output: 15.00, cached: 0.30,  reasoning: 15.00,  cache_creation: 3.00  },
-  "kimi-k2.7-code":               { input: 0.95,  output: 4.00,  cached: 0.19,  reasoning: 4.00,   cache_creation: 0.95  },
-  "kimi-k2.7-code-highspeed":     { input: 1.90,  output: 8.00,  cached: 0.38,  reasoning: 8.00,   cache_creation: 1.90  },
+  "kimi-k2.7-code":                  { input: 0.95, output: 4, cached: 0.19, reasoning: 4, cache_creation: 0 },
+  "kimi-k2.7-code-highspeed":        { input: 1.9, output: 8, cached: 0.38, reasoning: 8, cache_creation: 0 },
   "kimi-for-coding":              { input: 0.95,  output: 4.00,  cached: 0.19,  reasoning: 4.00,   cache_creation: 0.95  },
   "kimi-for-coding-highspeed":    { input: 1.90,  output: 8.00,  cached: 0.38,  reasoning: 8.00,   cache_creation: 1.90  },
   "kimi-k2":                      { input: 1.00,  output: 4.00,  cached: 0.50,  reasoning: 6.00,   cache_creation: 1.00  },
   "kimi-k2-thinking":             { input: 1.50,  output: 6.00,  cached: 0.75,  reasoning: 9.00,   cache_creation: 1.50  },
-  "kimi-k2.5":                    { input: 1.20,  output: 4.80,  cached: 0.60,  reasoning: 7.20,   cache_creation: 1.20  },
+  "kimi-k2.5":                       { input: 0.6, output: 3, cached: 0.1, reasoning: 3, cache_creation: 0 },
   "kimi-k2.5-thinking":           { input: 1.80,  output: 7.20,  cached: 0.90,  reasoning: 10.80,  cache_creation: 1.80  },
-  "kimi-k2.6":                    { input: 1.00,  output: 4.00,  cached: 0.50,  reasoning: 6.00,   cache_creation: 1.00  },
+  "kimi-k2.6":                       { input: 0.95, output: 4, cached: 0.16, reasoning: 4, cache_creation: 0 },
   "kimi-latest":                  { input: 1.00,  output: 4.00,  cached: 0.50,  reasoning: 6.00,   cache_creation: 1.00  },
 
-  // === DeepSeek ===
+  
+  "moonshot-v1-128k":                { input: 2, output: 5, cached: 0, reasoning: 5, cache_creation: 0 },
+  "moonshot-v1-128k-vision-preview": { input: 2, output: 5, cached: 0, reasoning: 5, cache_creation: 0 },
+  "moonshot-v1-32k":                 { input: 1, output: 3, cached: 0, reasoning: 3, cache_creation: 0 },
+  "moonshot-v1-32k-vision-preview":  { input: 1, output: 3, cached: 0, reasoning: 3, cache_creation: 0 },
+  "moonshot-v1-8k":                  { input: 0.2, output: 2, cached: 0, reasoning: 2, cache_creation: 0 },
+  "moonshot-v1-8k-vision-preview":   { input: 0.2, output: 2, cached: 0, reasoning: 2, cache_creation: 0 },
+  "moonshot-v1-auto":                { input: 2, output: 5, cached: 0, reasoning: 5, cache_creation: 0 },
+// === DeepSeek ===
   "deepseek-chat":                { input: 0.14,  output: 0.28,  cached: 0.0028, reasoning: 0.28,   cache_creation: 0.14  },
   "deepseek-reasoner":            { input: 0.14,  output: 0.28,  cached: 0.0028, reasoning: 0.28,   cache_creation: 0.14  },
   "deepseek-r1":                  { input: 0.14,  output: 0.28,  cached: 0.0028, reasoning: 0.28,   cache_creation: 0.14  },
@@ -316,7 +324,7 @@ export const PATTERN_PRICING = [
   // --- Kimi ---
   { pattern: "kimi-*-thinking",  pricing: { input: 1.80,  output: 7.20,  cached: 0.90,  reasoning: 10.80,  cache_creation: 1.80  } },
   { pattern: "kimi-k3*",        pricing: { input: 3.00,  output: 15.00, cached: 0.30,  reasoning: 15.00,  cache_creation: 3.00  } },
-  { pattern: "kimi-k2*",        pricing: { input: 1.20,  output: 4.80,  cached: 0.60,  reasoning: 7.20,   cache_creation: 1.20  } },
+  { pattern: "kimi-k2.5*",            pricing: { input: 0.6, output: 3, cached: 0.1, reasoning: 3, cache_creation: 0 } },
   { pattern: "kimi-*",          pricing: { input: 1.00,  output: 4.00,  cached: 0.50,  reasoning: 6.00,   cache_creation: 1.00  } },
 
   // --- DeepSeek ---
