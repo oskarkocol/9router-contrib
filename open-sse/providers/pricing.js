@@ -57,14 +57,14 @@ export const MODEL_PRICING = {
   "o1-mini":                      { input: 3.00,  output: 12.00, cached: 1.50,  reasoning: 18.00,  cache_creation: 3.00  },
 
   // === Gemini ===
-  "gemini-3.6-flash":              { input: 1.50,  output: 7.50,  cached: 0.15,  reasoning: 11.25,  cache_creation: 1.875 },
+  "gemini-3.6-flash":                { input: 1.5, output: 7.5, cached: 0.15, reasoning: 7.5, cache_creation: 0.083333 },
   "gemini-3.6-flash-high":         { input: 1.50,  output: 7.50,  cached: 0.15,  reasoning: 11.25,  cache_creation: 1.875 },
   "gemini-3.6-flash-medium":       { input: 1.50,  output: 7.50,  cached: 0.15,  reasoning: 11.25,  cache_creation: 1.875 },
   "gemini-3.6-flash-low":          { input: 1.50,  output: 7.50,  cached: 0.15,  reasoning: 11.25,  cache_creation: 1.875 },
-  "gemini-3.5-flash-lite":         { input: 0.30,  output: 2.50,  cached: 0.03,  reasoning: 3.75,   cache_creation: 0.375 },
+  "gemini-3.5-flash-lite":           { input: 0.3, output: 2.5, cached: 0.03, reasoning: 2.5, cache_creation: 0.083333 },
   "gemini-3.5-flash-high":         { input: 0.50,  output: 3.00,  cached: 0.03,  reasoning: 4.50,   cache_creation: 0.50  },
-  "gemini-3-flash-preview":        { input: 0.50,  output: 3.00,  cached: 0.03,  reasoning: 4.50,   cache_creation: 0.50  },
-  "gemini-3-pro-preview":         { input: 2.00,  output: 12.00, cached: 0.25,  reasoning: 18.00,  cache_creation: 2.00  },
+  "gemini-3-flash-preview":          { input: 0.5, output: 3, cached: 0.05, reasoning: 3, cache_creation: 0.083333 },
+  "gemini-3-pro-preview":            { input: 2, output: 12, cached: 0.2, reasoning: 12, cache_creation: 0.375 },
   "gemini-3.1-pro-low":           { input: 2.00,  output: 12.00, cached: 0.25,  reasoning: 18.00,  cache_creation: 2.00  },
   "gemini-3.1-pro-high":          { input: 4.00,  output: 18.00, cached: 0.50,  reasoning: 27.00,  cache_creation: 4.00  },
   "gemini-pro-agent":             { input: 4.00,  output: 18.00, cached: 0.50,  reasoning: 27.00,  cache_creation: 4.00  },
@@ -72,11 +72,21 @@ export const MODEL_PRICING = {
   "gemini-3.5-flash-low":         { input: 0.50,  output: 3.00,  cached: 0.03,  reasoning: 4.50,   cache_creation: 0.50  },
   "gemini-3.5-flash-extra-low":   { input: 0.50,  output: 3.00,  cached: 0.03,  reasoning: 4.50,   cache_creation: 0.50  },
   "gemini-3-flash":               { input: 0.50,  output: 3.00,  cached: 0.03,  reasoning: 4.50,   cache_creation: 0.50  },
-  "gemini-2.5-pro":               { input: 2.00,  output: 12.00, cached: 0.25,  reasoning: 18.00,  cache_creation: 2.00  },
-  "gemini-2.5-flash":             { input: 0.30,  output: 2.50,  cached: 0.03,  reasoning: 3.75,   cache_creation: 0.30  },
-  "gemini-2.5-flash-lite":        { input: 0.15,  output: 1.25,  cached: 0.015, reasoning: 1.875,  cache_creation: 0.15  },
-
-  // === Qwen ===
+  "gemini-2.5-pro":                  { input: 1.25, output: 10, cached: 0.125, reasoning: 10, cache_creation: 0.375 },
+  "gemini-2.5-flash":                { input: 0.3, output: 2.5, cached: 0.03, reasoning: 2.5, cache_creation: 0.083333 },
+  "gemini-2.5-flash-lite":           { input: 0.1, output: 0.4, cached: 0.01, reasoning: 0.4, cache_creation: 0.083333 },
+  
+  "gemini-3.1-flash-lite":           { input: 0.25, output: 1.5, cached: 0.025, reasoning: 1.5, cache_creation: 0.083333 },
+  "gemini-3.1-flash-lite-preview":   { input: 0.25, output: 1.5, cached: 0.025, reasoning: 1.5, cache_creation: 0.083333 },
+  "gemini-3.1-pro-preview":          { input: 2, output: 12, cached: 0.2, reasoning: 12, cache_creation: 0.375 },
+  "gemini-3.1-pro-preview-customtools": { input: 2, output: 12, cached: 0.2, reasoning: 12, cache_creation: 0.375 },
+  "gemini-3.5-flash":                { input: 1.5, output: 9, cached: 0.15, reasoning: 9, cache_creation: 0.083333 },
+  "gemini-flash-latest":             { input: 0.3, output: 2.5, cached: 0.03, reasoning: 2.5, cache_creation: 0.083333 },
+  "gemini-flash-lite-latest":        { input: 0.1, output: 0.4, cached: 0.01, reasoning: 0.4, cache_creation: 0.083333 },
+  "gemini-pro-latest":               { input: 1.25, output: 10, cached: 0.125, reasoning: 10, cache_creation: 0.375 },
+  "gemma-4-26b-a4b-it":              { input: 0, output: 0, cached: 0, reasoning: 0, cache_creation: 0 },
+  "gemma-4-31b-it":                  { input: 0, output: 0, cached: 0, reasoning: 0, cache_creation: 0 },
+// === Qwen ===
   "qwen3-coder-plus":             { input: 1.00,  output: 4.00,  cached: 0.50,  reasoning: 6.00,   cache_creation: 1.00  },
   "qwen3-coder-flash":            { input: 0.50,  output: 2.00,  cached: 0.25,  reasoning: 3.00,   cache_creation: 0.50  },
 
@@ -284,12 +294,12 @@ export const PATTERN_PRICING = [
   { pattern: "claude-*",        pricing: { input: 3.00,  output: 15.00, cached: 0.30,  reasoning: 15.00,  cache_creation: 3.75  } },
 
   // --- Gemini (specific first, generic last) ---
-  { pattern: "gemini-*-flash-lite", pricing: { input: 0.15, output: 1.25, cached: 0.015, reasoning: 1.875, cache_creation: 0.15 } },
-  { pattern: "gemini-*-flash",  pricing: { input: 0.30,  output: 2.50,  cached: 0.03,  reasoning: 3.75,   cache_creation: 0.30  } },
-  { pattern: "gemini-*-pro",    pricing: { input: 2.00,  output: 12.00, cached: 0.25,  reasoning: 18.00,  cache_creation: 2.00  } },
-  { pattern: "gemini-3-*",      pricing: { input: 0.50,  output: 3.00,  cached: 0.03,  reasoning: 4.50,   cache_creation: 0.50  } },
-  { pattern: "gemini-2.5-*",    pricing: { input: 0.30,  output: 2.50,  cached: 0.03,  reasoning: 3.75,   cache_creation: 0.30  } },
-  { pattern: "gemini-*",        pricing: { input: 0.50,  output: 3.00,  cached: 0.03,  reasoning: 4.50,   cache_creation: 0.50  } },
+  { pattern: "gemini-*-flash-lite", pricing: { input: 0.10,  output: 0.40,  cached: 0.01,  reasoning: 0.40,  cache_creation: 0.083333 } },
+  { pattern: "gemini-*-flash",  pricing: { input: 0.30,  output: 2.50,  cached: 0.03,  reasoning: 2.50,  cache_creation: 0.083333 } },
+  { pattern: "gemini-*-pro",    pricing: { input: 1.25,  output: 10.00,  cached: 0.125,  reasoning: 10.00,  cache_creation: 0.375 } },
+  { pattern: "gemini-3-*",      pricing: { input: 0.50,  output: 3.00,  cached: 0.05,  reasoning: 3.00,  cache_creation: 0.083333 } },
+  { pattern: "gemini-2.5-*",    pricing: { input: 0.30,  output: 2.50,  cached: 0.03,  reasoning: 2.50,  cache_creation: 0.083333 } },
+  { pattern: "gemini-*",        pricing: { input: 0.50,  output: 3.00,  cached: 0.05,  reasoning: 3.00,  cache_creation: 0.083333 } },
 
   // --- GPT (specific first, generic last) ---
   { pattern: "gpt-5.6-*",       pricing: { input: 2.50,  output: 15.00, cached: 0.25,  reasoning: 15.00,  cache_creation: 2.50  } },
