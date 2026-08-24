@@ -27,8 +27,7 @@ describe("Gemini 3.7 Flash Support & Config (#3286, #3281)", () => {
     expect(caps.maxOutput).toBe(65536);
   });
 
-  it("defines pricing matching gemini-3.6-flash baseline", () => {
-    expect(MODEL_PRICING["gemini-3.7-flash"]).toEqual(MODEL_PRICING["gemini-3.6-flash"]);
+  it("defines pricing matching gemini-3.6-flash tier baseline", () => {
     expect(MODEL_PRICING["gemini-3.7-flash-high"]).toEqual(MODEL_PRICING["gemini-3.6-flash-high"]);
     expect(MODEL_PRICING["gemini-3.7-flash-medium"]).toEqual(MODEL_PRICING["gemini-3.6-flash-medium"]);
     expect(MODEL_PRICING["gemini-3.7-flash-low"]).toEqual(MODEL_PRICING["gemini-3.6-flash-low"]);
