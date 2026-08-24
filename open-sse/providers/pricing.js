@@ -118,6 +118,7 @@ export const MODEL_PRICING = {
   "glm-5-turbo":                    { input: 1.2, output: 4, cached: 0.24, reasoning: 4, cache_creation: 0 },
   "glm-5.1":                        { input: 1.4, output: 4.4, cached: 0.26, reasoning: 4.4, cache_creation: 0 },
   "glm-5.2":                        { input: 1.4, output: 4.4, cached: 0.26, reasoning: 4.4, cache_creation: 0 },
+  "glm-5.3":                        { input: 1.4, output: 4.4, cached: 0.26, reasoning: 4.4, cache_creation: 0 },
   // === MiniMax ===
   "MiniMax-M3":                   { input: 0.30,  output: 1.20,  cached: 0.06,  reasoning: 1.80,   cache_creation: 0.30  },
   "MiniMax-M2.1":                 { input: 0.50,  output: 2.00,  cached: 0.25,  reasoning: 3.00,   cache_creation: 0.50  },
