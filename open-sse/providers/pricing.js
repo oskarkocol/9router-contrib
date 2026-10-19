@@ -83,7 +83,7 @@ export const MODEL_PRICING = {
   "gpt-5.6":                      { input: 2.50,  output: 15.00, cached: 0.25,  reasoning: 15.00,  cache_creation: 2.50  },
   "gpt-5.6-luna": { input: 0.2, output: 1.2, cached: 0.02, reasoning: 1.2, cache_creation: 0.25 },
   "gpt-5.6-terra": { input: 2.00, output: 12.00, cached: 0.2, reasoning: 12.00, cache_creation: 2.5 },
-  "gpt-5.6-sol": { input: 2.00, output: 10.00, cached: 0.2, reasoning: 10.00, cache_creation: 2.5 },
+  "gpt-5.6-sol": { input: 4.00, output: 20.00, cached: 0.40, reasoning: 20.00, cache_creation: 5.00 },
   // OpenAI Standard short-context pricing (developers.openai.com/api/docs/pricing).
   // Long-context pricing is higher, but this table currently stores one rate per model.
   "gpt-6-astra": { input: 10.00, output: 50.00, cached: 1.00, reasoning: 50.00, cache_creation: 12.5 },
