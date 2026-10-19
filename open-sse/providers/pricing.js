@@ -113,6 +113,10 @@ export const MODEL_PRICING = {
   "gemini-flash-latest":          { input: 0.30,  output: 2.50,  cached: 0.03,  reasoning: 2.50,   cache_creation: 0.083333 },
   "gemini-flash-lite-latest":     { input: 0.10,  output: 0.40,  cached: 0.01,  reasoning: 0.40,   cache_creation: 0.083333 },
   "gemini-pro-latest":            { input: 1.25,  output: 10.00, cached: 0.125, reasoning: 10.00,  cache_creation: 0.375 },
+  "gemini-4-argon":               { input: 2.00,  output: 10.00, cached: 0.10,  reasoning: 10.00,  cache_creation: 0.1875 },
+  "gemini-4-argon-high":          { input: 2.00,  output: 10.00, cached: 0.10,  reasoning: 10.00,  cache_creation: 0.1875 },
+  "gemini-4-argon-medium":        { input: 2.00,  output: 10.00, cached: 0.10,  reasoning: 10.00,  cache_creation: 0.1875 },
+  "gemini-4-argon-low":           { input: 2.00,  output: 10.00, cached: 0.10,  reasoning: 10.00,  cache_creation: 0.1875 },
   "gemma-4-26b-a4b-it":           { input: 0,     output: 0,     cached: 0,     reasoning: 0,      cache_creation: 0     },
   "gemma-4-31b-it":               { input: 0,     output: 0,     cached: 0,     reasoning: 0,      cache_creation: 0     },
 
