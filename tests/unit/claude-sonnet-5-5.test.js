@@ -26,7 +26,7 @@ describe("Claude Sonnet 5.5", () => {
   });
 
   it.each(["claude-sonnet-5-5", "claude-sonnet-5"])("prices %s at Sonnet 5 rates", (model) => {
-    expect(getPricingForModel("claude", model)).toEqual({ input: 2, output: 10, cached: 0.2, reasoning: 10, cache_creation: 2.5 });
+    expect(getPricingForModel("claude", model)).toEqual({ input: 2, output: 10, cached: 0.1, reasoning: 10, cache_creation: 2.5 });
   });
 });
 
